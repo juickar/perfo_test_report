@@ -1,0 +1,397 @@
+//// switch tests ////
+
+thread.yield.preemptive.ctx.mean                                                             :      34 cycles ,      533 ns : 
+thread.yield.preemptive.ctx.min                                                               :      33 cycles ,      515 ns : 
+thread.yield.preemptive.ctx.max                                                               :     105 cycles ,     1640 ns : 
+thread.yield.preemptive.ctx.stddev                                                            :       3 cycles ,       46 ns : 
+thread.yield.preemptive.ctx.median                                                            :      33 cycles ,      515 ns : 
+thread.yield.preemptive.ctx.p90                                                               :      34 cycles ,      531 ns : 
+thread.yield.preemptive.ctx.p99                                                               :      48 cycles ,      750 ns : 
+
+thread.yield.cooperative.ctx.mean                                                            :      34 cycles ,      531 ns : 
+thread.yield.cooperative.ctx.min                                                              :      33 cycles ,      515 ns : 
+thread.yield.cooperative.ctx.max                                                              :      50 cycles ,      781 ns : 
+thread.yield.cooperative.ctx.stddev                                                           :       2 cycles ,       31 ns : 
+thread.yield.cooperative.ctx.median                                                           :      33 cycles ,      515 ns : 
+thread.yield.cooperative.ctx.p90                                                              :      34 cycles ,      531 ns : 
+thread.yield.cooperative.ctx.p99                                                              :      49 cycles ,      765 ns : 
+
+//// ISR tests ////
+
+isr.resume.interrupted.thread.kernel.mean                                                    :      13 cycles ,      204 ns : 
+isr.resume.interrupted.thread.kernel.min                                                      :      13 cycles ,      203 ns : 
+isr.resume.interrupted.thread.kernel.max                                                      :      54 cycles ,      843 ns : 
+isr.resume.interrupted.thread.kernel.stddev                                                   :       1 cycles ,       15 ns : 
+isr.resume.interrupted.thread.kernel.median                                                   :      13 cycles ,      203 ns : 
+isr.resume.interrupted.thread.kernel.p90                                                      :      13 cycles ,      203 ns : 
+isr.resume.interrupted.thread.kernel.p99                                                      :      14 cycles ,      218 ns : 
+
+isr.resume.different.thread.kernel.mean                                                      :      39 cycles ,      622 ns : 
+isr.resume.different.thread.kernel.min                                                        :      39 cycles ,      609 ns : 
+isr.resume.different.thread.kernel.max                                                        :      58 cycles ,      906 ns : 
+isr.resume.different.thread.kernel.stddev                                                     :       3 cycles ,       46 ns : 
+isr.resume.different.thread.kernel.median                                                     :      39 cycles ,      609 ns : 
+isr.resume.different.thread.kernel.p90                                                        :      40 cycles ,      625 ns : 
+isr.resume.different.thread.kernel.p99                                                        :      57 cycles ,      890 ns : 
+
+//// thread tests ////
+
+thread.create.mean                                                                           :      10 cycles ,      171 ns : 
+thread.create.min                                                                             :      10 cycles ,      156 ns : 
+thread.create.max                                                                             :      38 cycles ,      593 ns : 
+thread.create.stddev                                                                          :       0 cycles ,        0 ns : 
+thread.create.median                                                                          :      11 cycles ,      171 ns : 
+thread.create.p90                                                                             :      11 cycles ,      171 ns : 
+thread.create.p99                                                                             :      12 cycles ,      187 ns : 
+
+thread.start.mean                                                                            :      38 cycles ,      600 ns : 
+thread.start.min                                                                              :      37 cycles ,      578 ns : 
+thread.start.max                                                                              :      55 cycles ,      859 ns : 
+thread.start.stddev                                                                           :       2 cycles ,       31 ns : 
+thread.start.median                                                                           :      38 cycles ,      593 ns : 
+thread.start.p90                                                                              :      38 cycles ,      593 ns : 
+thread.start.p99                                                                              :      49 cycles ,      765 ns : 
+
+thread.suspend.mean                                                                          :      34 cycles ,      545 ns : 
+thread.suspend.min                                                                            :      34 cycles ,      531 ns : 
+thread.suspend.max                                                                            :      63 cycles ,      984 ns : 
+thread.suspend.stddev                                                                         :       2 cycles ,       31 ns : 
+thread.suspend.median                                                                         :      34 cycles ,      531 ns : 
+thread.suspend.p90                                                                            :      35 cycles ,      546 ns : 
+thread.suspend.p99                                                                            :      42 cycles ,      656 ns : 
+
+thread.resume.mean                                                                           :      36 cycles ,      567 ns : 
+thread.resume.min                                                                             :      35 cycles ,      546 ns : 
+thread.resume.max                                                                             :      61 cycles ,      953 ns : 
+thread.resume.stddev                                                                          :       2 cycles ,       31 ns : 
+thread.resume.median                                                                          :      36 cycles ,      562 ns : 
+thread.resume.p90                                                                             :      36 cycles ,      562 ns : 
+thread.resume.p99                                                                             :      44 cycles ,      687 ns : 
+
+thread.abort.mean                                                                            :       9 cycles ,      144 ns : 
+thread.abort.min                                                                              :       9 cycles ,      140 ns : 
+thread.abort.max                                                                              :      11 cycles ,      171 ns : 
+thread.abort.stddev                                                                           :       0 cycles ,        0 ns : 
+thread.abort.median                                                                           :       9 cycles ,      140 ns : 
+thread.abort.p90                                                                              :      10 cycles ,      156 ns : 
+thread.abort.p99                                                                              :      10 cycles ,      156 ns : 
+
+//// fifo tests ////
+
+fifo.put.immediate.mean                                                                      :       5 cycles ,       79 ns : 
+fifo.put.immediate.min                                                                        :       4 cycles ,       62 ns : 
+fifo.put.immediate.max                                                                        :      94 cycles ,     1468 ns : 
+fifo.put.immediate.stddev                                                                     :       2 cycles ,       31 ns : 
+fifo.put.immediate.median                                                                     :       5 cycles ,       78 ns : 
+fifo.put.immediate.p90                                                                        :       5 cycles ,       78 ns : 
+fifo.put.immediate.p99                                                                        :       5 cycles ,       78 ns : 
+
+fifo.get.immediate.mean                                                                      :       4 cycles ,       62 ns : 
+fifo.get.immediate.min                                                                        :       3 cycles ,       46 ns : 
+fifo.get.immediate.max                                                                        :      54 cycles ,      843 ns : 
+fifo.get.immediate.stddev                                                                     :       1 cycles ,       15 ns : 
+fifo.get.immediate.median                                                                     :       4 cycles ,       62 ns : 
+fifo.get.immediate.p90                                                                        :       4 cycles ,       62 ns : 
+fifo.get.immediate.p99                                                                        :       4 cycles ,       62 ns : 
+
+fifo.put.alloc.immediate.mean                                                                :      28 cycles ,      444 ns : 
+fifo.put.alloc.immediate.min                                                                  :      28 cycles ,      437 ns : 
+fifo.put.alloc.immediate.max                                                                  :      61 cycles ,      953 ns : 
+fifo.put.alloc.immediate.stddev                                                               :       1 cycles ,       15 ns : 
+fifo.put.alloc.immediate.median                                                               :      28 cycles ,      437 ns : 
+fifo.put.alloc.immediate.p90                                                                  :      29 cycles ,      453 ns : 
+fifo.put.alloc.immediate.p99                                                                  :      29 cycles ,      453 ns : 
+
+fifo.get.free.immediate.mean                                                                 :      29 cycles ,      455 ns : 
+fifo.get.free.immediate.min                                                                   :      29 cycles ,      453 ns : 
+fifo.get.free.immediate.max                                                                   :      42 cycles ,      656 ns : 
+fifo.get.free.immediate.stddev                                                                :       0 cycles ,        0 ns : 
+fifo.get.free.immediate.median                                                                :      29 cycles ,      453 ns : 
+fifo.get.free.immediate.p90                                                                   :      30 cycles ,      468 ns : 
+fifo.get.free.immediate.p99                                                                   :      30 cycles ,      468 ns : 
+
+fifo.get.blocking.mean                                                                       :      40 cycles ,      633 ns : 
+fifo.get.blocking.min                                                                         :      39 cycles ,      609 ns : 
+fifo.get.blocking.max                                                                         :      67 cycles ,     1046 ns : 
+fifo.get.blocking.stddev                                                                      :       3 cycles ,       46 ns : 
+fifo.get.blocking.median                                                                      :      40 cycles ,      625 ns : 
+fifo.get.blocking.p90                                                                         :      40 cycles ,      625 ns : 
+fifo.get.blocking.p99                                                                         :      58 cycles ,      906 ns : 
+
+fifo.put.wake+ctx.mean                                                                       :      41 cycles ,      653 ns : 
+fifo.put.wake+ctx.min                                                                         :      41 cycles ,      640 ns : 
+fifo.put.wake+ctx.max                                                                         :      60 cycles ,      937 ns : 
+fifo.put.wake+ctx.stddev                                                                      :       2 cycles ,       31 ns : 
+fifo.put.wake+ctx.median                                                                      :      41 cycles ,      640 ns : 
+fifo.put.wake+ctx.p90                                                                         :      42 cycles ,      656 ns : 
+fifo.put.wake+ctx.p99                                                                         :      53 cycles ,      828 ns : 
+
+fifo.get.free.blocking.mean                                                                  :      40 cycles ,      631 ns : 
+fifo.get.free.blocking.min                                                                    :      39 cycles ,      609 ns : 
+fifo.get.free.blocking.max                                                                    :      58 cycles ,      906 ns : 
+fifo.get.free.blocking.stddev                                                                 :       3 cycles ,       46 ns : 
+fifo.get.free.blocking.median                                                                 :      39 cycles ,      609 ns : 
+fifo.get.free.blocking.p90                                                                    :      40 cycles ,      625 ns : 
+fifo.get.free.blocking.p99                                                                    :      58 cycles ,      906 ns : 
+
+fifo.put.alloc.wake+ctx.mean                                                                 :      42 cycles ,      659 ns : 
+fifo.put.alloc.wake+ctx.min                                                                   :      41 cycles ,      640 ns : 
+fifo.put.alloc.wake+ctx.max                                                                   :      60 cycles ,      937 ns : 
+fifo.put.alloc.wake+ctx.stddev                                                                :       3 cycles ,       46 ns : 
+fifo.put.alloc.wake+ctx.median                                                                :      41 cycles ,      640 ns : 
+fifo.put.alloc.wake+ctx.p90                                                                   :      42 cycles ,      656 ns : 
+fifo.put.alloc.wake+ctx.p99                                                                   :      60 cycles ,      937 ns : 
+
+//// lifo tests ////
+
+lifo.put.immediate.mean                                                                      :       5 cycles ,       78 ns : 
+lifo.put.immediate.min                                                                        :       4 cycles ,       62 ns : 
+lifo.put.immediate.max                                                                        :      30 cycles ,      468 ns : 
+lifo.put.immediate.stddev                                                                     :       0 cycles ,        0 ns : 
+lifo.put.immediate.median                                                                     :       5 cycles ,       78 ns : 
+lifo.put.immediate.p90                                                                        :       5 cycles ,       78 ns : 
+lifo.put.immediate.p99                                                                        :       5 cycles ,       78 ns : 
+
+lifo.get.immediate.mean                                                                      :       4 cycles ,       64 ns : 
+lifo.get.immediate.min                                                                        :       4 cycles ,       62 ns : 
+lifo.get.immediate.max                                                                        :       6 cycles ,       93 ns : 
+lifo.get.immediate.stddev                                                                     :       0 cycles ,        0 ns : 
+lifo.get.immediate.median                                                                     :       4 cycles ,       62 ns : 
+lifo.get.immediate.p90                                                                        :       4 cycles ,       62 ns : 
+lifo.get.immediate.p99                                                                        :       5 cycles ,       78 ns : 
+
+lifo.put.alloc.immediate.mean                                                                :      28 cycles ,      444 ns : 
+lifo.put.alloc.immediate.min                                                                  :      28 cycles ,      437 ns : 
+lifo.put.alloc.immediate.max                                                                  :      47 cycles ,      734 ns : 
+lifo.put.alloc.immediate.stddev                                                               :       0 cycles ,        0 ns : 
+lifo.put.alloc.immediate.median                                                               :      28 cycles ,      437 ns : 
+lifo.put.alloc.immediate.p90                                                                  :      29 cycles ,      453 ns : 
+lifo.put.alloc.immediate.p99                                                                  :      29 cycles ,      453 ns : 
+
+lifo.get.free.immediate.mean                                                                 :      29 cycles ,      456 ns : 
+lifo.get.free.immediate.min                                                                   :      29 cycles ,      453 ns : 
+lifo.get.free.immediate.max                                                                   :      34 cycles ,      531 ns : 
+lifo.get.free.immediate.stddev                                                                :       0 cycles ,        0 ns : 
+lifo.get.free.immediate.median                                                                :      29 cycles ,      453 ns : 
+lifo.get.free.immediate.p90                                                                   :      30 cycles ,      468 ns : 
+lifo.get.free.immediate.p99                                                                   :      30 cycles ,      468 ns : 
+
+lifo.get.blocking.mean                                                                       :      40 cycles ,      632 ns : 
+lifo.get.blocking.min                                                                         :      39 cycles ,      609 ns : 
+lifo.get.blocking.max                                                                         :      70 cycles ,     1093 ns : 
+lifo.get.blocking.stddev                                                                      :       3 cycles ,       46 ns : 
+lifo.get.blocking.median                                                                      :      40 cycles ,      625 ns : 
+lifo.get.blocking.p90                                                                         :      40 cycles ,      625 ns : 
+lifo.get.blocking.p99                                                                         :      58 cycles ,      906 ns : 
+
+lifo.put.wake+ctx.mean                                                                       :      41 cycles ,      653 ns : 
+lifo.put.wake+ctx.min                                                                         :      41 cycles ,      640 ns : 
+lifo.put.wake+ctx.max                                                                         :      60 cycles ,      937 ns : 
+lifo.put.wake+ctx.stddev                                                                      :       2 cycles ,       31 ns : 
+lifo.put.wake+ctx.median                                                                      :      41 cycles ,      640 ns : 
+lifo.put.wake+ctx.p90                                                                         :      42 cycles ,      656 ns : 
+lifo.put.wake+ctx.p99                                                                         :      53 cycles ,      828 ns : 
+
+lifo.get.free.blocking.mean                                                                  :      40 cycles ,      633 ns : 
+lifo.get.free.blocking.min                                                                    :      39 cycles ,      609 ns : 
+lifo.get.free.blocking.max                                                                    :      56 cycles ,      875 ns : 
+lifo.get.free.blocking.stddev                                                                 :       3 cycles ,       46 ns : 
+lifo.get.free.blocking.median                                                                 :      40 cycles ,      625 ns : 
+lifo.get.free.blocking.p90                                                                    :      40 cycles ,      625 ns : 
+lifo.get.free.blocking.p99                                                                    :      55 cycles ,      859 ns : 
+
+lifo.put.alloc.wake+ctx.mean                                                                 :      42 cycles ,      659 ns : 
+lifo.put.alloc.wake+ctx.min                                                                   :      41 cycles ,      640 ns : 
+lifo.put.alloc.wake+ctx.max                                                                   :      59 cycles ,      921 ns : 
+lifo.put.alloc.wake+ctx.stddev                                                                :       3 cycles ,       46 ns : 
+lifo.put.alloc.wake+ctx.median                                                                :      41 cycles ,      640 ns : 
+lifo.put.alloc.wake+ctx.p90                                                                   :      42 cycles ,      656 ns : 
+lifo.put.alloc.wake+ctx.p99                                                                   :      58 cycles ,      906 ns : 
+
+//// event tests ////
+
+events.post.immediate.mean                                                                   :       7 cycles ,      109 ns : 
+events.post.immediate.min                                                                     :       6 cycles ,       93 ns : 
+events.post.immediate.max                                                                     :       9 cycles ,      140 ns : 
+events.post.immediate.stddev                                                                  :       0 cycles ,        0 ns : 
+events.post.immediate.median                                                                  :       7 cycles ,      109 ns : 
+events.post.immediate.p90                                                                     :       7 cycles ,      109 ns : 
+events.post.immediate.p99                                                                     :       8 cycles ,      125 ns : 
+
+events.set.immediate.mean                                                                    :       7 cycles ,      114 ns : 
+events.set.immediate.min                                                                      :       7 cycles ,      109 ns : 
+events.set.immediate.max                                                                      :      19 cycles ,      296 ns : 
+events.set.immediate.stddev                                                                   :       0 cycles ,        0 ns : 
+events.set.immediate.median                                                                   :       7 cycles ,      109 ns : 
+events.set.immediate.p90                                                                      :       8 cycles ,      125 ns : 
+events.set.immediate.p99                                                                      :       8 cycles ,      125 ns : 
+
+events.wait.immediate.mean                                                                   :       4 cycles ,       71 ns : 
+events.wait.immediate.min                                                                     :       4 cycles ,       62 ns : 
+events.wait.immediate.max                                                                     :      39 cycles ,      609 ns : 
+events.wait.immediate.stddev                                                                  :       1 cycles ,       15 ns : 
+events.wait.immediate.median                                                                  :       5 cycles ,       78 ns : 
+events.wait.immediate.p90                                                                     :       5 cycles ,       78 ns : 
+events.wait.immediate.p99                                                                     :       5 cycles ,       78 ns : 
+
+events.wait_all.immediate.mean                                                               :       4 cycles ,       70 ns : 
+events.wait_all.immediate.min                                                                 :       4 cycles ,       62 ns : 
+events.wait_all.immediate.max                                                                 :      18 cycles ,      281 ns : 
+events.wait_all.immediate.stddev                                                              :       0 cycles ,        0 ns : 
+events.wait_all.immediate.median                                                              :       4 cycles ,       62 ns : 
+events.wait_all.immediate.p90                                                                 :       5 cycles ,       78 ns : 
+events.wait_all.immediate.p99                                                                 :       5 cycles ,       78 ns : 
+
+events.wait.blocking.mean                                                                    :      40 cycles ,      633 ns : 
+events.wait.blocking.min                                                                      :      39 cycles ,      609 ns : 
+events.wait.blocking.max                                                                      :      59 cycles ,      921 ns : 
+events.wait.blocking.stddev                                                                   :       2 cycles ,       31 ns : 
+events.wait.blocking.median                                                                   :      40 cycles ,      625 ns : 
+events.wait.blocking.p90                                                                      :      41 cycles ,      640 ns : 
+events.wait.blocking.p99                                                                      :      52 cycles ,      812 ns : 
+
+events.set.wake+ctx.mean                                                                     :      48 cycles ,      759 ns : 
+events.set.wake+ctx.min                                                                       :      47 cycles ,      734 ns : 
+events.set.wake+ctx.max                                                                       :      72 cycles ,     1125 ns : 
+events.set.wake+ctx.stddev                                                                    :       3 cycles ,       46 ns : 
+events.set.wake+ctx.median                                                                    :      48 cycles ,      750 ns : 
+events.set.wake+ctx.p90                                                                       :      49 cycles ,      765 ns : 
+events.set.wake+ctx.p99                                                                       :      65 cycles ,     1015 ns : 
+
+events.wait_all.blocking.mean                                                                :      41 cycles ,      641 ns : 
+events.wait_all.blocking.min                                                                  :      39 cycles ,      609 ns : 
+events.wait_all.blocking.max                                                                  :      59 cycles ,      921 ns : 
+events.wait_all.blocking.stddev                                                               :       3 cycles ,       46 ns : 
+events.wait_all.blocking.median                                                               :      40 cycles ,      625 ns : 
+events.wait_all.blocking.p90                                                                  :      41 cycles ,      640 ns : 
+events.wait_all.blocking.p99                                                                  :      56 cycles ,      875 ns : 
+
+events.post.wake+ctx.mean                                                                    :      49 cycles ,      769 ns : 
+events.post.wake+ctx.min                                                                      :      48 cycles ,      750 ns : 
+events.post.wake+ctx.max                                                                      :      66 cycles ,     1031 ns : 
+events.post.wake+ctx.stddev                                                                   :       2 cycles ,       31 ns : 
+events.post.wake+ctx.median                                                                   :      49 cycles ,      765 ns : 
+events.post.wake+ctx.p90                                                                      :      49 cycles ,      765 ns : 
+events.post.wake+ctx.p99                                                                      :      65 cycles ,     1015 ns : 
+
+//// semaphore tests ////
+
+semaphore.give.immediate.mean                                                                :       2 cycles ,       42 ns : 
+semaphore.give.immediate.min                                                                  :       2 cycles ,       31 ns : 
+semaphore.give.immediate.max                                                                  :       6 cycles ,       93 ns : 
+semaphore.give.immediate.stddev                                                               :       0 cycles ,        0 ns : 
+semaphore.give.immediate.median                                                               :       3 cycles ,       46 ns : 
+semaphore.give.immediate.p90                                                                  :       3 cycles ,       46 ns : 
+semaphore.give.immediate.p99                                                                  :       3 cycles ,       46 ns : 
+
+semaphore.take.immediate.mean                                                                :       2 cycles ,       42 ns : 
+semaphore.take.immediate.min                                                                  :       2 cycles ,       31 ns : 
+semaphore.take.immediate.max                                                                  :      25 cycles ,      390 ns : 
+semaphore.take.immediate.stddev                                                               :       0 cycles ,        0 ns : 
+semaphore.take.immediate.median                                                               :       3 cycles ,       46 ns : 
+semaphore.take.immediate.p90                                                                  :       3 cycles ,       46 ns : 
+semaphore.take.immediate.p99                                                                  :       3 cycles ,       46 ns : 
+
+semaphore.take.blocking.mean                                                                 :      37 cycles ,      592 ns : 
+semaphore.take.blocking.min                                                                   :      37 cycles ,      578 ns : 
+semaphore.take.blocking.max                                                                   :      56 cycles ,      875 ns : 
+semaphore.take.blocking.stddev                                                                :       2 cycles ,       31 ns : 
+semaphore.take.blocking.median                                                                :      37 cycles ,      578 ns : 
+semaphore.take.blocking.p90                                                                   :      38 cycles ,      593 ns : 
+semaphore.take.blocking.p99                                                                   :      48 cycles ,      750 ns : 
+
+semaphore.give.wake+ctx.mean                                                                 :      39 cycles ,      615 ns : 
+semaphore.give.wake+ctx.min                                                                   :      39 cycles ,      609 ns : 
+semaphore.give.wake+ctx.max                                                                   :      64 cycles ,     1000 ns : 
+semaphore.give.wake+ctx.stddev                                                                :       1 cycles ,       15 ns : 
+semaphore.give.wake+ctx.median                                                                :      39 cycles ,      609 ns : 
+semaphore.give.wake+ctx.p90                                                                   :      40 cycles ,      625 ns : 
+semaphore.give.wake+ctx.p99                                                                   :      49 cycles ,      765 ns : 
+
+//// condvar tests ////
+
+condvar.wait.blocking.mean                                                                   :      41 cycles ,      649 ns : 
+condvar.wait.blocking.min                                                                     :      40 cycles ,      625 ns : 
+condvar.wait.blocking.max                                                                     :      95 cycles ,     1484 ns : 
+condvar.wait.blocking.stddev                                                                  :       1 cycles ,       15 ns : 
+condvar.wait.blocking.median                                                                  :      41 cycles ,      640 ns : 
+condvar.wait.blocking.p90                                                                     :      42 cycles ,      656 ns : 
+condvar.wait.blocking.p99                                                                     :      44 cycles ,      687 ns : 
+
+condvar.signal.wake+ctx.mean                                                                 :      43 cycles ,      681 ns : 
+condvar.signal.wake+ctx.min                                                                   :      42 cycles ,      656 ns : 
+condvar.signal.wake+ctx.max                                                                   :      87 cycles ,     1359 ns : 
+condvar.signal.wake+ctx.stddev                                                                :       2 cycles ,       31 ns : 
+condvar.signal.wake+ctx.median                                                                :      43 cycles ,      671 ns : 
+condvar.signal.wake+ctx.p90                                                                   :      44 cycles ,      687 ns : 
+condvar.signal.wake+ctx.p99                                                                   :      53 cycles ,      828 ns : 
+
+//// stack tests ////
+
+stack.push.immediate.mean                                                                    :       3 cycles ,       54 ns : 
+stack.push.immediate.min                                                                      :       3 cycles ,       46 ns : 
+stack.push.immediate.max                                                                      :      40 cycles ,      625 ns : 
+stack.push.immediate.stddev                                                                   :       1 cycles ,       15 ns : 
+stack.push.immediate.median                                                                   :       3 cycles ,       46 ns : 
+stack.push.immediate.p90                                                                      :       4 cycles ,       62 ns : 
+stack.push.immediate.p99                                                                      :       4 cycles ,       62 ns : 
+
+stack.pop.immediate.mean                                                                     :       3 cycles ,       52 ns : 
+stack.pop.immediate.min                                                                       :       3 cycles ,       46 ns : 
+stack.pop.immediate.max                                                                       :      27 cycles ,      421 ns : 
+stack.pop.immediate.stddev                                                                    :       0 cycles ,        0 ns : 
+stack.pop.immediate.median                                                                    :       3 cycles ,       46 ns : 
+stack.pop.immediate.p90                                                                       :       4 cycles ,       62 ns : 
+stack.pop.immediate.p99                                                                       :       4 cycles ,       62 ns : 
+
+stack.pop.blocking.mean                                                                      :      39 cycles ,      623 ns : 
+stack.pop.blocking.min                                                                        :      39 cycles ,      609 ns : 
+stack.pop.blocking.max                                                                        :      56 cycles ,      875 ns : 
+stack.pop.blocking.stddev                                                                     :       3 cycles ,       46 ns : 
+stack.pop.blocking.median                                                                     :      39 cycles ,      609 ns : 
+stack.pop.blocking.p90                                                                        :      40 cycles ,      625 ns : 
+stack.pop.blocking.p99                                                                        :      55 cycles ,      859 ns : 
+
+stack.push.wake+ctx.mean                                                                     :      41 cycles ,      652 ns : 
+stack.push.wake+ctx.min                                                                       :      41 cycles ,      640 ns : 
+stack.push.wake+ctx.max                                                                       :      58 cycles ,      906 ns : 
+stack.push.wake+ctx.stddev                                                                    :       2 cycles ,       31 ns : 
+stack.push.wake+ctx.median                                                                    :      41 cycles ,      640 ns : 
+stack.push.wake+ctx.p90                                                                       :      42 cycles ,      656 ns : 
+stack.push.wake+ctx.p99                                                                       :      57 cycles ,      890 ns : 
+
+//// mutex tests ////
+
+mutex.lock.immediate.recursive.mean                                                          :       3 cycles ,       60 ns : 
+mutex.lock.immediate.recursive.min                                                            :       3 cycles ,       46 ns : 
+mutex.lock.immediate.recursive.max                                                            :      14 cycles ,      218 ns : 
+mutex.lock.immediate.recursive.stddev                                                         :       0 cycles ,        0 ns : 
+mutex.lock.immediate.recursive.median                                                         :       4 cycles ,       62 ns : 
+mutex.lock.immediate.recursive.p90                                                            :       4 cycles ,       62 ns : 
+mutex.lock.immediate.recursive.p99                                                            :       4 cycles ,       62 ns : 
+
+mutex.unlock.immediate.recursive.mean                                                        :       2 cycles ,       32 ns : 
+mutex.unlock.immediate.recursive.min                                                          :       2 cycles ,       31 ns : 
+mutex.unlock.immediate.recursive.max                                                          :       6 cycles ,       93 ns : 
+mutex.unlock.immediate.recursive.stddev                                                       :       0 cycles ,        0 ns : 
+mutex.unlock.immediate.recursive.median                                                       :       2 cycles ,       31 ns : 
+mutex.unlock.immediate.recursive.p90                                                          :       2 cycles ,       31 ns : 
+mutex.unlock.immediate.recursive.p99                                                          :       3 cycles ,       46 ns : 
+
+//// heap tests ////
+
+heap.malloc.immediate.mean                                                                   :      22 cycles ,      354 ns : 
+heap.malloc.immediate.min                                                                     :      22 cycles ,      343 ns : 
+heap.malloc.immediate.max                                                                     :      35 cycles ,      546 ns : 
+heap.malloc.immediate.stddev                                                                  :       1 cycles ,       15 ns : 
+heap.malloc.immediate.median                                                                  :      23 cycles ,      359 ns : 
+heap.malloc.immediate.p90                                                                     :      23 cycles ,      359 ns : 
+heap.malloc.immediate.p99                                                                     :      35 cycles ,      546 ns : 
+
+heap.free.immediate.mean                                                                     :      25 cycles ,      403 ns : 
+heap.free.immediate.min                                                                       :      25 cycles ,      390 ns : 
+heap.free.immediate.max                                                                       :      30 cycles ,      468 ns : 
+heap.free.immediate.stddev                                                                    :       0 cycles ,        0 ns : 
+heap.free.immediate.median                                                                    :      26 cycles ,      406 ns : 
+heap.free.immediate.p90                                                                       :      26 cycles ,      406 ns : 
+heap.free.immediate.p99                                                                       :      30 cycles ,      468 ns : 
